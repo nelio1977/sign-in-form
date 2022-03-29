@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" novalidate id="login">
+            <h1 class="form-title" >Login</h1>
+            <div>
+                <input id="loginInput" type="text" placeholder="username" autofocus required>
+                <div class="msg-error">Please enter username</div>
+            </div>
+            <div>
+                <input id="loginPassword" type="password" placeholder="password" required>
+                <div class="msg-error">Please enter password</div>
+            </div>   
+            <button class="btn" type="submit">submit</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+
+
+        <form class="form2 hidden-form" novalidate id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div>    
+                <div class="username_error">Username must be at least 8 characters in length</div>        
+                <input id="createAccountInput" type="text" placeholder="username" autofocus required>
+                <div class="msg-error">Please enter username</div>
+              
+            </div>
+            <div>
+                <input id="createAccountEmail" type="email" placeholder="email" required>
+                <div class="msg-error">Please enter email</div>
+            </div>
+            <div>
+                <input id="createAccountPassword" type="password" placeholder="password" required>
+                <div class="msg-error">Please enter password</div>
+            </div>
+            <div>
+                <input id="createAccountPassword2" type="password" placeholder="confirm password" required>
+                <div class="msg-error">Please confirm password</div>
+            </div>
+            <button class="btn" type="submit">submit</button>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+    </div>
+    <script src="/script.js" type="text/javascript"></script>
+</body>
+
+</html>
